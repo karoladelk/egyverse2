@@ -1,0 +1,41 @@
+/* body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: #ffffff;
+  --transparent: transparent;
+  --black: #000000;
+  --blue-500: #3b82f6;
+  --indigo-300: #a5b4fc;
+  --blue-300: #93c5fd;
+  --violet-200: #c4b5fd;
+  --blue-400: #60a5fa;
+}
+
+@layer utilities {
+  .animate-aurora {
+    animation: aurora 30s infinite;
+  }
+
+  @keyframes aurora {
+    0%, 100% {
+      background-position: 50% 50%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+  }
+}
