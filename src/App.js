@@ -16,7 +16,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="https://egyverse-temp.netlify.app/islamic-museum" element={<IslamicMuseum />} />
+        <Route path="/islamic-museum" element={<IslamicMuseum />} />
       </Routes>
     </BrowserRouter>
   );
