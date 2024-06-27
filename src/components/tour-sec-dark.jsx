@@ -20,9 +20,10 @@ const posts = [
   },
   {
     id: 3,
-    title: 'Gayer-Anderson Museum',
-    href: '#',
-    description: 'The Gayer-Anderson Museum in Cairo, Egypt, showcases Islamic and Egyptian art within a 17th-century Ottoman house, featuring intricate woodwork and courtyards.',
+    title: 'Islamic Museum',
+    href: 'islamic-museum',
+    // description: 'The Gayer-Anderson Museum in Cairo, Egypt, showcases Islamic and Egyptian art within a 17th-century Ottoman house, featuring intricate woodwork and courtyards.',
+    description:'The Islamic Museum is a museum located in Cairo, Egypt. It is one of the most important museums in the world dedicated to Islamic art and culture. The museum was founded in 1881 by Khedive Tewfik Pasha, and was originally housed in the mosque of Prince Ibrahim Pasha in the Citadel of Cairo. The museum was moved to its current location in 1903, and has been expanded several times since then.',
     category: { title: 'Marketing', href: '#' },
   },
 ];
@@ -79,7 +80,7 @@ export default function Tour() {
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-8 text-center">Explore Our VR Experiences</h1>
         </div>
-        <div className="mx-auto mt-2 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-6 sm:pt-6 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-2 grid max-w-3xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-6 sm:pt-6 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post, index) => (
             <article key={post.id} className="flex max-w-xl flex-col items-start justify-between bg-[#1c1a1f] bg-opacity-90 p-3 border-2 border-[#1c1a1f] rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
               <div className="relative">

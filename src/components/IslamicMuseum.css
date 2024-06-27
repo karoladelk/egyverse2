@@ -1,0 +1,82 @@
+/* styles.css */
+.page-container {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .video-container {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    
+  }
+  
+  .language-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    
+  }
+  
+  .language-buttons button {
+    background-color: #333;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    left: 10%;
+    top: -380%;
+    z-index: 10;
+  
+  }
+  
+  .language-buttons button:hover {
+    background-color: #2a7a8d;
+    transform: scale(1.1);
+  }
+  
+  .black-strip {
+    width: 85%;
+    height: 46px;
+    /* background-color: rgb(42, 122, 141,0.9); */
+    background-color: rgb(28, 26, 31,0.9);
+    /* margin-top: 10px; */
+    z-index: 5;
+    position: relative;
+    top: -12.2%;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .language-buttons button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  

@@ -1,28 +1,24 @@
 // import "./components/hero.css";
-import { useState, useEffect, useRef } from "react";
-import Header from "./components/header";
-import ImageSection from "./components/image";
-import OtherSections from "./components/avatar-sec-dark";
-import FixedTitle from "./components/title";
-import Tour from "./components/tour-sec-dark";
-import Test from "./components/test-dark";
-import Steps from "./components/steps";
-import VR from './components/VR';
+// import { useState, useEffect, useRef } from "react";
+// import ImageSection from "./components/image";
+// import OtherSections from "./components/avatar-sec-dark";
+// import FixedTitle from "./components/title";
+// import Tour from "./components/tour-sec-dark";
+// import Test from "./components/test-dark";
+// import Steps from "./components/steps";
+// import VR from './components/VR';
+import IslamicMuseum from './components/IslamicMuseum';
+import LandingPage from "./components/LandingPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App() {
-
   return (
-    // <div className="app-container">
-     
-      <div>
-        <Test/>
-        <OtherSections />
-        <Tour />
-        {/* <VR /> */}
-        <Steps />
-        
-      </div>
-    // </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/islamic-museum" element={<IslamicMuseum />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 // import Steps from './components/steps';
