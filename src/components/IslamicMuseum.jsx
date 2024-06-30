@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from "./Modal";
 import { HiOutlineArrowCircleLeft, HiOutlineArrowCircleRight } from "react-icons/hi";
+import ButtonLink from './ui/ButtonLink';
 
 function Image({ image }) {
   return (
@@ -16,7 +17,7 @@ function Image({ image }) {
           className="h-auto w-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-          <p className="text-white text-center">{image.description}</p>
+          <p className="text-white text-center p-2">{image.description}</p>
         </div>
       </div>
       <h3 className="p-3 text-gray-200 text-lg text-center mb-10">{image.title}</h3>
@@ -58,15 +59,6 @@ export default function IslamicMuseum() {
     },
   ];
   
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const handleNext = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
 
   const backgroundStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/bg-islamic2.webp)`,
