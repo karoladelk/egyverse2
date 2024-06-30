@@ -9,6 +9,7 @@
 // import VR from './components/VR';
 import IslamicMuseum from './components/IslamicMuseum';
 import LandingPage from "./components/LandingPage";
+import IslamicMuseumTour from "./components/IslamicMuseumTour";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/islamic-museum" element={<IslamicMuseum />} />
+        <Route path="/islamic-museum-tour" element={<IslamicMuseumTour />} />
       </Routes>
     </BrowserRouter>
   );

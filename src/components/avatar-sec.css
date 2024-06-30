@@ -20,7 +20,7 @@
 .language-buttons {
   display: flex;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   justify-content: center;
   
 }
@@ -34,7 +34,7 @@
   transition: background-color 0.3s, transform 0.3s;
   position: relative;
   left: 10%;
-  top: -380%;
+  top: -220%;
   z-index: 10;
 
 }
@@ -45,14 +45,14 @@
 }
 
 .black-strip {
-  width: 85%;
+  width: 100%;
   height: 46px;
   /* background-color: rgb(42, 122, 141,0.9); */
-  background-color: rgb(28, 26, 31,0.9);
+  background-color: rgba(167, 132, 93, 0.4);
   /* margin-top: 10px; */
   z-index: 5;
   position: relative;
-  top: -12.2%;
+  top: -12.3%;
 }
 
 .tooltip {

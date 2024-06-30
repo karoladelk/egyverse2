@@ -47,7 +47,7 @@ const Avatar = () => {
             </div>
             <div className="flex flex-col items-center">
               
-              {/* <div className="language-buttons">
+              <div className="language-buttons">
                 <button className={`px-4 py-2 rounded-full`} onClick={() => handleLanguageChange('en')}
                   style={{
                     backgroundImage: `${language === 'en' ? `url(${process.env.PUBLIC_URL}/usa.png)` : `url(${process.env.PUBLIC_URL}/usa.png)`}`,
@@ -69,15 +69,15 @@ const Avatar = () => {
                     backgroundPosition: 'center',
                     backgroundSize: '100%',
                   }} />
-              </div> */}
-              {/* <div className="black-strip"></div> */}
-              <div className="video-container" style={{ width: '100%', height: '100%', top: "0vh", left: "%", paddingBottom: "200px", zIndex:"1" }}>
-                {/* <video key={language} className="w-full h-full" controls>
-                  <source src={`${process.env.PUBLIC_URL}/video-${language}.mp4`} type="video/mp4" />
+              </div>
+              <div className="black-strip"></div>
+              <div className="video-container" style={{ width: '100%', height: '100%', top: "-10vh", left: "%", paddingBottom: "200px", zIndex:"1" }}>
+                <video key={language} className="w-full h-full" controls>
+                  <source src={`${process.env.PUBLIC_URL}/landing-avatar-${language}.mp4`} type="video/mp4" />
                   Your browser does not support the video tag.
-                </video> */}
-                <img src={`${process.env.PUBLIC_URL}/avatar3.webp`}>
-                </img>
+                </video>
+                {/* <img src={`${process.env.PUBLIC_URL}/avatar3.webp`}>
+                </img> */}
               </div>
             </div>
           </div>

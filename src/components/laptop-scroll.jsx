@@ -63,14 +63,34 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[270vh] flex flex-col items-center py-0 md:py-40 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100 scale-[0.35] sm:scale-50"
+      className="min-h-[180vh] flex flex-col items-center py-0  justify-start flex-shrink-0 [perspective:800px] transform md:scale-100 scale-[0.35] sm:scale-50 mb-20"
     >
-      {/* <h1>
-        Scroll down to see the magic. <br /> This is a Macbook built with
+      {/* <h1 style={{
+        marginBottom: "1rem",
+
+      }}>
+        The Islamic Museum
       </h1> */}
-      <h1>
-        Scroll down to start your tour
-      </h1>
+              <h1 className="text-white font-semibold mb-8">The Islamic Museum</h1>
+
+      {/* <p className="text-white text-start mb-4 text-lg" style={{ fontSize: "1.2rem" }}>
+  Discover the Islamic Museum in Cairo, Egypt, home to an incredible collection of Islamic art and history. Scroll down to take a virtual tour and explore its treasures.
+</p> */}
+      <p style={{
+        fontSize: "1.2rem",
+        color: "#6ca0ae",
+        textAlign: "center",
+        // padding: "1rem",
+        fontWeight: "semi-bold",
+      
+      }}>
+        {/* The Islamic Museum in Cairo, Egypt, is home to an incredible collection of Islamic art and history.  */}
+         Scroll down to take a virtual tour and explore its treasures.
+      </p>
+      
+
+
+      
       <motion.h2
         style={{
           translateY: textTransform,
